@@ -23,7 +23,7 @@ def final_words_list(words_list):
             listo.append(word_func(word))
 
     return listo
-
+#
 
 words_list = ["ab", "bb", "hefg", "dhck", "dkhc"]
 print(final_words_list(words_list))
