@@ -78,7 +78,7 @@ for i in range(r):
         if not ((j + 1 < c and S3[i][j + 1] == 'O') or (j - 1 >= 0 and S3[i][j - 1] == 'O') or (
                 i - 1 >= 0 and S3[i - 1][j] == 'O') or (i + 1 < r and S3[i + 1][j] == 'O')):
             if S3[i][j] != 'O': S5[i][j] = 'O'
-
+#
 if n % 2 == 0:
     printGrid(D)
 elif n == 1:
