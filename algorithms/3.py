@@ -1,11 +1,6 @@
 from pprint import pprint
 
-grid = [".......",
-"...O.O.",
-"....O..",
-"..O....",
-"OO...OO",
-"OO.O..."]
+grid = []
 
 n = 5
 
@@ -16,17 +11,16 @@ for i in grid:
     grid_after_2.append(i)
 
 
-#
-# print(grid_after_2)
-# print(grid)
-
-
 # 3
 def bomberman(n, grid):
+    # creating list of lists
     new_grid = [list(i) for i in grid]
+    # iteration in original grid to replace all chars with "O"
     for i in grid:
         i.replace(i, "O")
+    # if it's the 2nd second returns grid with all the "O"
     if n % 3 == 2 or n == 2:
+        # grid full of "O"-s
         grid_after_2 = []
         for i in grid:
             i = "O" * len(i)
