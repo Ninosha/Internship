@@ -14,7 +14,7 @@ def word_func(word):
                 return "".join(word[::-1])
 
 
-def traki(words_list):
+def final_words_list(words_list):
     listo = []
     for word in words_list:
         if word_func(word) == word:
@@ -26,4 +26,4 @@ def traki(words_list):
 
 
 words_list = ["ab", "bb", "hefg", "dhck", "dkhc"]
-print(traki(words_list))
+print(final_words_list(words_list))
